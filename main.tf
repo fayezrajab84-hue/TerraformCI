@@ -6,6 +6,14 @@ terraform {
       version = "~>3.43.0"
     }
   }
+
+  cloud {
+
+    organization = "cybervaultscool"
+    workspaces {
+      name = "TerraformCI"
+    }
+  }
 }
 
 provider "azurerm" {
